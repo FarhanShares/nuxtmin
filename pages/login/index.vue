@@ -57,7 +57,6 @@ export default Vue.extend({
         this.$store
           .dispatch('login', { ...this.form })
           .then((e) => {
-            // todo: show toast
             console.log('on', e)
             this.$router.push({ name: 'users' })
           })
