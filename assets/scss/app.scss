@@ -1,0 +1,18 @@
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  border-radius: 0.5em;
+  border: 0;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+}

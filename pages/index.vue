@@ -1,5 +1,10 @@
 <template>
-  <div>Welcome</div>
+  <div>Welcome
+
+    <button class="button button--primary">
+      Button
+    </button>
+  </div>
 </template>
 
 <script lang="ts">
