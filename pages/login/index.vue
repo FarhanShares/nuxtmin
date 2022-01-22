@@ -1,18 +1,20 @@
 <template>
   <div class="login">
-   <div class="login__body">
+   <form class="login__body">
       <h1 class="login__body__title">SIGN IN TO YOUR ACCOUNT</h1>
 
       <input v-model="form.username" type="text" class="field field--primary" autofocus />
 
       <input v-model="form.password" type="password" class="field field--primary mt-2" />
 
+      <div class="flexy-center mt-1" style="color: red; height: 10px">{{ error }}</div>
+
       <div class="flexy-center mt-3">
-        <button class="button button--primary" :disabled="busy" @click="onLogin">
+        <button type="submit" class="button button--primary" :disabled="busy" @click="onLogin">
           Sign In
         </button>
       </div>
-   </div>
+   </form>
   </div>
 </template>
 
@@ -24,6 +26,7 @@ export default Vue.extend({
 
   data: () => ({
     busy: false,
+    error: '',
 
     form: {
       username: '',
@@ -42,11 +45,14 @@ export default Vue.extend({
           this.$router.push({name: 'users'})
         })
         .catch(e => {
-          // todo: show toast
           console.log('error', e)
+          this.error = 'Login Failed! Invalid username or password!'
+          setTimeout(() => {
+            this.error = ''
+          }, 3000)
         })
         .finally(() => (this.busy = false))
-        }, 1200)
+        }, 500)
     }
   }
 })
