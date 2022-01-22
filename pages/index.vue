@@ -1,9 +1,8 @@
 <template>
-  <div>Welcome
-
-    <button class="button button--primary">
-      Button
-    </button>
+  <div>
+    Welcome
+    <br>
+    <nuxt-link to="/login">Login</nuxt-link>
   </div>
 </template>
 

@@ -6,6 +6,7 @@
     <button class="button button--primary" @click="$store.commit('increment')">
       Login
     </button>
+    <nuxt-link to="/">Home</nuxt-link>
   </div>
 </template>
 
