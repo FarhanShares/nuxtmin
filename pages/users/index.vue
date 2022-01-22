@@ -1,8 +1,8 @@
 <template>
   <div>
     Users
-
-    {{ users }}
+    <button @click="$fetch()">Fetch again</button>
+    {{ users[0] }}
   </div>
 </template>
 

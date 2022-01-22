@@ -2,7 +2,8 @@
   <div>
     Login
 
-    <button class="button button--primary">
+    {{ $store.state.counter }}
+    <button class="button button--primary" @click="$store.commit('increment')">
       Login
     </button>
   </div>
