@@ -20,6 +20,8 @@ import Vue from 'vue'
 
 export default Vue.extend({
   name: 'IndexPage',
+
+  middleware: 'auth',
 })
 </script>
 <style lang="scss" scoped>

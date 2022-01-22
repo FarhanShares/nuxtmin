@@ -147,6 +147,8 @@ export default Vue.extend({
 
   components: { AppSidebar, AppModal },
 
+  middleware: 'auth',
+
   data() {
     return {
       users: [],
@@ -157,7 +159,7 @@ export default Vue.extend({
 
   async fetch() {
     this.users = await this.$axios
-      .get('/users.json')
+      .get('https://stage-ark.deenibondhon.com/users.json')
       .then((response) => response.data)
       .catch((e) => console.log('fetch error', e))
   },
