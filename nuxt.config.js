@@ -11,18 +11,17 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
-        rel: "stylesheet",
-        href: "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css",
-        integrity: "sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7",
-        crossorigin: "anonymous"
-      }
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css',
+        integrity:
+          'sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7',
+        crossorigin: 'anonymous',
+      },
     ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '~assets/scss/app.scss'
-  ],
+  css: ['~assets/scss/app.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -47,10 +46,7 @@ export default {
   ],
 
   styleResources: {
-    scss: [
-      '~assets/scss/mixins.scss',
-      '~assets/scss/variables.scss'
-    ]
+    scss: ['~assets/scss/mixins.scss', '~assets/scss/variables.scss'],
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -70,6 +66,6 @@ export default {
   build: {},
 
   router: {
-    // middleware: ['auth']
+    middleware: ['auth']
   },
 }

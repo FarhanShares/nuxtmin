@@ -19,7 +19,7 @@ export const state = () => ({
       email: 'johndoe@nuxtmin.test',
       lastLogin: '2022-01-01T00:00:00.000Z',
       createdAt: '2022-01-01T00:00:00.000Z',
-    }
+    },
   ],
 
   user: {
@@ -36,19 +36,21 @@ export const state = () => ({
 export const getters = {
   isAuthenticated: (state: any) => {
     return state.user.id !== null
-  }
+  },
 }
 
 export const mutations = {
   setUser(state: any, payload: any) {
     state.user = payload
-  }
+  },
 }
 
 export const actions = {
   login({ commit, state }: any, payload: any) {
     const user = state.authenticableUsers.find((user: any) => {
-      return user.username === payload.username && user.password === payload.password
+      return (
+        user.username === payload.username && user.password === payload.password
+      )
     })
 
     if (user) {
@@ -57,5 +59,5 @@ export const actions = {
     }
 
     return Promise.reject(new Error('Invalid username or password'))
-  }
+  },
 }
