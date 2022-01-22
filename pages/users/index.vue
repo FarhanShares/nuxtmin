@@ -33,7 +33,7 @@
 
           <div class="user-modal__info__data">
             <svg class="user-modal__info__data__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path></svg>
-            <span class="user-modal__info__data__text">{{ modalData.email }}</span>
+            <a :href="`mailto:${modalData.email}?subject=We're Hiring!&body=Join us now!`" class="user-modal__info__data__text user-modal__info__data__text--link">{{ modalData.email }}</a>
           </div>
 
           <div class="user-modal__info__data">
@@ -143,6 +143,14 @@ export default Vue.extend({
       display: flex;
       align-items: center;
       gap: 15px;
+
+      &__text {
+        font-size: 15px;
+
+        &--link {
+          color: blue;
+        }
+      }
 
       &__icon {
         height: 25px;

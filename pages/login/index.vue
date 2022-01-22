@@ -3,7 +3,7 @@
    <div class="login__body">
       <h1 class="login__body__title">SIGN IN TO YOUR ACCOUNT</h1>
 
-      <input v-model="form.username" type="text" class="field field--primary" />
+      <input v-model="form.username" type="text" class="field field--primary" autofocus />
 
       <input v-model="form.password" type="password" class="field field--primary mt-2" />
 
@@ -88,8 +88,13 @@ export default Vue.extend({
   line-height: 1.5;
   outline: none;
 
+  &:focus {
+    border: 1px solid blue;
+  }
+
   &--primary {
     border-color: #ccc;
+    background-color: rgb(238, 246, 250);
   }
 }
 </style>
