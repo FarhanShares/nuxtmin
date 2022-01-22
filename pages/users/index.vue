@@ -157,7 +157,7 @@ export default Vue.extend({
 
   async fetch() {
     this.users = await this.$axios
-      .get('/api/users.json')
+      .get('/users.json')
       .then((response) => response.data)
       .catch((e) => console.log('fetch error', e))
   },
