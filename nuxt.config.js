@@ -27,6 +27,7 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     '@nuxtjs/style-resources',
+    '@vueuse/nuxt',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -61,6 +62,6 @@ export default {
   build: {},
 
   router: {
-    middleware: ['auth']
+    // middleware: ['auth']
   },
 }
