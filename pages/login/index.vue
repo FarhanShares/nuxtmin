@@ -3,16 +3,15 @@
    <div class="login__body">
       <h1 class="login__body__title">SIGN IN TO YOUR ACCOUNT</h1>
 
-      <input type="text" class="field field--primary" />
+      <input v-model="form.username" type="text" class="field field--primary" />
 
-      <input type="password" class="field field--primary mt-2" />
+      <input v-model="form.password" type="password" class="field field--primary mt-2" />
 
       <div class="flexy-center mt-3">
-        <button class="button button--primary">
+        <button class="button button--primary" :disabled="busy" @click="onLogin">
           Sign In
         </button>
       </div>
-      <!-- <nuxt-link to="/">Home</nuxt-link> -->
    </div>
   </div>
 </template>
@@ -22,6 +21,34 @@ import Vue from 'vue'
 
 export default Vue.extend({
   name: 'LoginPage',
+
+  data: () => ({
+    busy: false,
+
+    form: {
+      username: '',
+      password: '',
+    }
+  }),
+
+  methods: {
+    onLogin() {
+      this.busy = true
+      setTimeout(() => {
+        this.$store.dispatch('login', {...this.form})
+        .then(e => {
+          // todo: show toast
+          console.log('on', e);
+          this.$router.push({name: 'users'})
+        })
+        .catch(e => {
+          // todo: show toast
+          console.log('error', e)
+        })
+        .finally(() => (this.busy = false))
+        }, 1200)
+    }
+  }
 })
 </script>
 
