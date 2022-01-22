@@ -1,3 +1,23 @@
+.flexy-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mt- {
+  &0 {
+    margin-top: 0;
+  }
+  &1 {
+    margin-top: 1rem;
+  }
+  &2 {
+    margin-top: 2rem;
+  }
+  &3 {
+    margin-top: 3rem;
+  }
+}
 .button {
   display: inline-block;
   padding: 0.5em 1em;
