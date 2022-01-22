@@ -136,7 +136,7 @@ export default Vue.extend({
     bottom: 0;
     margin: auto;
     z-index: 101;
-    padding: 15px;
+    /* padding: 15px; */
     background: #fff;
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
