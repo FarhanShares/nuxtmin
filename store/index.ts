@@ -33,6 +33,12 @@ export const state = () => ({
   },
 })
 
+export const getters = {
+  isAuthenticated: (state: any) => {
+    return state.user.id !== null
+  }
+}
+
 export const mutations = {
   setUser(state: any, payload: any) {
     state.user = payload
