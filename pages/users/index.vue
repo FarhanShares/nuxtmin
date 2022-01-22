@@ -159,7 +159,7 @@ export default Vue.extend({
 
   async fetch() {
     this.users = await this.$axios
-      .get('https://stage-ark.deenibondhon.com/users.json')
+      .get('/users.json')
       .then((response) => response.data)
       .catch((e) => console.log('fetch error', e))
   },
