@@ -2016,28 +2016,28 @@
   optionalDependencies:
     prettier "^1.18.2 || ^2.0.0"
 
-"@vueuse/core@7.5.4":
-  version "7.5.4"
-  resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-7.5.4.tgz#c515c6795f1b8ab9a50e62e2f1aa75aac5f1ca14"
-  integrity sha512-PKmyHN2lZuttGgKmsoMMqiSojSYYKraszilP0gpQIGcLt2YoLABaG3VFjdPs2tY6DM+HG3o70HuzOMEQCY8fqQ==
+"@vueuse/core@7.6.0":
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-7.6.0.tgz#821dfbe137a00a4a25da5848c7e6ab1e04953198"
+  integrity sha512-gTkTYbOO19AnhmbH39mMlfoOOcxSSOtXeI69Ixm7gE/C0eT8Vnpb7VE9KGrobCr4sUqE5fmwAdPIYkdB/NJIzQ==
   dependencies:
-    "@vueuse/shared" "7.5.4"
+    "@vueuse/shared" "7.6.0"
     vue-demi "*"
 
-"@vueuse/nuxt@^7.5.4":
-  version "7.5.4"
-  resolved "https://registry.yarnpkg.com/@vueuse/nuxt/-/nuxt-7.5.4.tgz#900c26d92528e71d0074f599db3f6698da47f187"
-  integrity sha512-nA9Mskugp7kGShi+DAtLVOZ5eO15LdBIiFRAp7fqhceXPAHSkntF4DjqCP/wqlh8uWsd6NEEBM7T2Mq2cyev1Q==
+"@vueuse/nuxt@^7.6.0":
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/nuxt/-/nuxt-7.6.0.tgz#920d6db4a1fb63b81f63cb4d7bd3fbadad39dae4"
+  integrity sha512-DOOpWADC8zenpkbUSrSZLsKcSWQIpjFx1h6KablxiYojS9b94s0nd/GxUnR5AlitpHu7zwPEBCSYe3PbC7rfng==
   dependencies:
     "@nuxt/kit" "npm:@nuxt/kit-edge@latest"
-    "@vueuse/core" "7.5.4"
+    "@vueuse/core" "7.6.0"
     local-pkg "^0.4.1"
     vue-demi "*"
 
-"@vueuse/shared@7.5.4":
-  version "7.5.4"
-  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-7.5.4.tgz#4285e5c47fe5f2d608f115bf2aa26154f474e881"
-  integrity sha512-750RnGUEgg1+K4jGVkv7M5UOStAa/IjAInV6BugyBOvRYL2l1lcIDUi4V/qIKTlhd2oUAByCEnlqIpFD2a3tfw==
+"@vueuse/shared@7.6.0":
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-7.6.0.tgz#37da9008f2263a0478743d05f485a00a6d2b9024"
+  integrity sha512-+Q0XVQHX/Low2dQMZfrkZcOOY6oB5+JNOEsM2HJFCjAvhotujpGnQiwyfGKb35wxynlmR97oCCZmGuVMgv/9dg==
   dependencies:
     vue-demi "*"
 
